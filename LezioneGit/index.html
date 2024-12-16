@@ -6,13 +6,73 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Nav tabs -->
+    <ul
+        class="nav nav-tabs"
+        id="navId"
+        role="tablist"
+    >
+        <li class="nav-item">
+            <img src="https://picsum.photos/600/400?random=1" alt="">
+        </li>
+        <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+            >
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+            </div>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
+                >Another link</a
+            >
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link disabled" data-bs-toggle="tab"
+                >Disabled</a
+            >
+        </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+            
+        </div>
+       <h1>Ciao castrese</h1>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+    
+
     <h1>Ciao Dario</h1>
     
     <img src="https://picsum.photos/600/400?random=1" alt="">
 
     <p>Questa è la modifica di Davide</p>
+    <p>Questa invece è la mia modifica</p>
+    <div class="card text-start">
+        <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Body</p>
+        </div>
+    </div>
 
 
+<<<<<<< HEAD
     <h2>Ciao Castrese</h2>
 
 
@@ -22,6 +82,8 @@
         <li>ciap</li>
 
     </ul>
+=======
+>>>>>>> ee42da9edf5b40733f272279af11e7be69d506ff
 
     <script src="./js/script01.js"></script>
 </body>
