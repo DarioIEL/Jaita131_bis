@@ -45,31 +45,141 @@
         </li>
     </ul>
     
-    <!-- Tab panes -->
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
-            
-        </div>
-       <h1>Ciao castrese</h1>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-    </div>
-    
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
 
-    <h1>Ciao Dario</h1>
-    
-    <img src="https://picsum.photos/600/400?random=1" alt="">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+  </head>
+  <body>
 
-    <p>Questa è la modifica di Davide</p>
-    <p>Questa invece è la mia modifica</p>
-    <div class="card text-start">
-        <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
-        <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Body</p>
+    <section id="hero">
+        <h1>Media Queries</h1>
+    </section>
+
+    <div class="container">
+      <section id="info">
+        
+       
+        <div class="section-title">
+          <h2>More about our services</h2>
         </div>
+
+        <!-- START INFO BOX -->
+        <div class="info-box">
+          <div class="info-image">
+            <img src="https://picsum.photos/600/400?random=1" alt="" />
+          </div>
+          <div class="info-text">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae saepe quasi, corrupti neque assumenda temporibus
+              aperiam, amet nesciunt blanditiis repellat possimus repellendus
+              veniam. Modi commodi asperiores natus eos. Impedit, dignissimos.
+            </p>
+          </div>
+        </div>
+        <!-- END INFO BOX -->
+
+        <!-- START INFO BOX -->
+        <div class="info-box">
+          <div class="info-image">
+            <img src="https://picsum.photos/600/400?random=2" alt="" />
+          </div>
+          <div class="info-text">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae saepe quasi, corrupti neque assumenda temporibus
+              aperiam, amet nesciunt blanditiis repellat possimus repellendus
+              veniam. Modi commodi asperiores natus eos. Impedit, dignissimos.
+            </p>
+          </div>
+        </div>
+        <!-- END INFO BOX -->
+        <!-- START INFO BOX -->
+        <div class="info-box">
+          <div class="info-image">
+            <img src="https://picsum.photos/600/400?random=3" alt="" />
+          </div>
+          <div class="info-text">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae saepe quasi, corrupti neque assumenda temporibus
+              aperiam, amet nesciunt blanditiis repellat possimus repellendus
+              veniam. Modi commodi asperiores natus eos. Impedit, dignissimos.
+            </p>
+          </div>
+        </div>
+        <!-- END INFO BOX -->
+      </section>
+
+      <section id="gallery">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=1" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=2" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=3" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=4" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=5" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=6" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=7" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=8" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=9" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=10" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=11" alt="" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/400/400?random=12" alt="" />
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- Immagini responsive con PICTURE -->
+
+    <picture>
+        <!-- creo i vari tag source in base al numero di immagini per le diverse media queries -->
+        <source srcset="./images/gattogin-h.webp" media="(min-width:992px)">
+        <source srcset="./images/gattogin-q.webp" media="(min-width:768px)">
+
+        <!-- da 0 alla prima media query mettiamo il tag img -->
+        <img src="./images/gattogin-v.webp" alt="gatto">
+    </picture>
+
+  </body>
+</html>
+
 
 
 
